@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Roller Volume</title> 
+</head>
+
+<body>
+
+    <div class="container">
+        <p>Enter the height of the roller</p>
+        <input type="text" id="height">
+
+        <p>Enter the radius of the roller</p>
+        <input type="text" id="radius">
+
+        <p>The volume of the roller is: </p>
+        <input id="volume">
+        <button onclick="calculateTheVolume()">Calculate</button>
+
+    </div>
+
+    <script>
+
+        const pi = 3.14;
+        function calculateTheVolume(){
+            var height = document.getElementById("height").value;
+            var radius = document.getElementById("radius").value;
+            document.getElementById("volume").value = Math.pow(parseInt(height), 2) * pi * parseInt(radius);
+        }
+
+
+    </script>
+</body>
+
+</html>

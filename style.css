@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+    margin: auto;
+    background-color: red;
+}
+
+#volume {
+    color:black;
+}
+
+input {
+    padding: 10px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 20px;
+}
